@@ -6,6 +6,7 @@ from character import Character
 
 Arya = Character('Arya Stark', 'Arya.png')
 Jon = Character('Jon Snow', 'Jon.png')
+no_one = Character('', '')
 
 print(Arya.name, Arya.avatar)
 print(Jon.name, Jon.avatar)
@@ -18,6 +19,7 @@ Arya.inventory.append('Mask')
 print(len(Arya.inventory))
 
 # Arya should have a `greet` method
-# when i call it, it should return
-# "Hello, I am Arya Stark. I am awesome."
-print(Arya.greet())
+# when i call it with `Arya.greet(Jon)`, it should return
+# "Hello Jon Snow, I am Arya Stark. I am awesome."
+print(Arya.greet(Jon))
+print(Arya.greet(no_one))
