@@ -38,6 +38,12 @@ print(Bronn.greet(Arya))
 print(Jon.greet(Bronn))
 print(Arya.greet(Bronn))
 
-White_walker = Monster("Joe the white walker", "Whitewalker.png")
+#I should be able to create a Monster instance
+White_walker = Monster()
 
-print(White_walker.name, white_walker.avatar)
+#When I print white_walker.name and white_walker.avatar the name and avatar will be returned
+# print(White_walker.name, White_walker.avatar)
+
+# When I call White_walker.greet() it will return 
+# "Grr, Im a monster"
+print(White_walker.greet())

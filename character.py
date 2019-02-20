@@ -40,4 +40,8 @@ class Hero(Character):
 # Monster inherits from Character
 # Character is the super class of Monster
 class Monster(Character):
-    pass
+    def  __init__(self):
+        pass
+
+    def greet(self):
+        return "GRRRRRRRR"
