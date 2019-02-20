@@ -25,5 +25,5 @@ print(Arya.greet())
 
 # Arya should have a `greet` method
 # when i call it with `Arya.greet(Jon)`, it should return
-# "Hello Jon Snow, I am Arya Stark. I am awesome."
+# "Hello, Jon Snow, I am Arya Stark. I am awesome."
 print(Arya.greet(Jon))
