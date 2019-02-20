@@ -33,3 +33,11 @@ class Character():
 # Character is the super class of Hero
 class Hero(Character):
     pass
+    
+
+# Monster is a kinf of Character
+# Monster is a subclass of Character
+# Monster inherits from Character
+# Character is the super class of Monster
+class Monster(Character):
+    pass

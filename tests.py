@@ -2,6 +2,7 @@
 
 from character import Character
 from character import Hero
+from character import Monster
 
 # Characters can be instanciated with name and avatar
 
@@ -30,4 +31,13 @@ print(Arya.greet())
 print(Arya.greet(Jon))
 
 # I should be able to create a hero instance
-bronn = Hero("Bronn of the Blackwater", "bron.png")
+Bronn = Hero("Bronn of the Blackwater", "bron.png")
+
+# Hero should be able to greet Character
+print(Bronn.greet(Arya))
+print(Jon.greet(Bronn))
+print(Arya.greet(Bronn))
+
+White_walker = Monster("Joe the white walker", "Whitewalker.png")
+
+print(White_walker.name, white_walker.avatar)
