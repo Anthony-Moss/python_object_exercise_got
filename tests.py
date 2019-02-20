@@ -49,4 +49,4 @@ White_walker = Monster()
 print(White_walker.greet())
 
 # If a Hero meets a Monster they freak out
-print(Bronn.great(White_walker))
+print(Bronn.greet(White_walker))

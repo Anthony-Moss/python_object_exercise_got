@@ -36,7 +36,7 @@ class Hero(Character):
         if type(someone) == Monster:
             return "EEEEEEEEEEK!!"
         else:
-            return super.greet(someone)
+            return super().greet(someone)
     
 
 # Monster is a kinf of Character
@@ -48,5 +48,4 @@ class Monster(Character):
         pass
 
     def greet(self, someone=None):
-        if someone is not None:
-            return "GRRRRRRRR"
+        return "GRRRRRRRR"
