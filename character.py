@@ -32,7 +32,11 @@ class Character():
 # Hero inherits from Character
 # Character is the super class of Hero
 class Hero(Character):
-    pass
+    def greet(self, someone=None):
+        if type(someone) == Monster:
+            return "EEEEEEEEEEK!!"
+        else:
+            return super.greet(someone)
     
 
 # Monster is a kinf of Character
@@ -43,5 +47,6 @@ class Monster(Character):
     def  __init__(self):
         pass
 
-    def greet(self):
-        return "GRRRRRRRR"
+    def greet(self, someone=None):
+        if someone is not None:
+            return "GRRRRRRRR"

@@ -47,3 +47,6 @@ White_walker = Monster()
 # When I call White_walker.greet() it will return 
 # "Grr, Im a monster"
 print(White_walker.greet())
+
+# If a Hero meets a Monster they freak out
+print(Bronn.great(White_walker))
